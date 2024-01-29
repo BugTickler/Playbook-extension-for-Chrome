@@ -1,0 +1,11 @@
+body {
+    width: 600px;
+    height: 800px;
+  }
+  
+  #content {
+    padding: 20px;
+    overflow-y: scroll;
+    max-height: 750px;
+  }
+  

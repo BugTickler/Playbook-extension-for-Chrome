@@ -1,0 +1,35 @@
+{
+  "manifest_version": 3,
+  "name": "Opsgenie-Confluence-Extension",
+  "version": "1.0",
+  "description": "Extension for integrating Opsgenie with Confluence",
+  "permissions": [
+      "activeTab",
+      "storage"
+  ],
+  "action": {
+      "default_icon": {
+          "16": "icon16.png",
+          "48": "icon48.png",
+          "128": "icon128.png"
+      },
+      "default_popup": "popup.html"
+  },
+  "content_scripts": [
+      {
+          "matches": ["*://your-opsgenie-domain.com/*"],
+          "js": ["content.js"]
+      }
+  ],
+  "icons": {
+      "16": "icon16.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+  },
+  "web_accessible_resources": [
+      {
+          "resources": ["images/*"],
+          "matches": ["*://enp-ops.app.opsgenie.com/*"]
+      }
+  ]
+}
